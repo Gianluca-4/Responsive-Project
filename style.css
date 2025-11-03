@@ -1,0 +1,695 @@
+/* Mini reset */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {background-color: #DDE4DA; position: relative;}
+
+/* Header: intestazione */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #266a29;
+    z-index: 9999;
+}
+
+.menu {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.menu li {
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    list-style: none;
+}
+
+.menu a {text-decoration: none; color: #fff;}
+
+.menu a:hover {color: #fbc02d; transition: 0.3s;}
+
+.contact {font-size: 16px; margin: 0; text-transform: uppercase;}
+
+.contact a {
+    color: #fbc02d;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.logo {width: 75px; height: 75px;}
+
+/* under_header: striscia marrone */
+.under-header {
+    width: 100%;
+    height: 70px;
+    background-color: #DDE4DA;
+    color: #2e7d32;
+    margin-top: 77px;
+    padding: 20px 478px;
+    font-size: 14px;
+}
+
+.span1 {font-family: 'Rubik', sans-serif; font-weight: 400;}
+
+.span2 {font-family: 'Rubik', sans-serif; font-weight: 500;}
+
+/* Sezione introduttiva */
+.introduction {
+    height: 80vh;
+    width: 100%;
+    padding: 150px 745px 20px 180px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(IMAGES/cover.webp) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.note {font-family: 'Rubik', sans-serif; font-weight: 400; font-size: 14px;}
+
+h1 {font-size: 60px; font-family: 'Merriweather', serif; font-weight: 500; text-transform: uppercase; margin-bottom: 10px;}
+
+.description {font-family: 'Rubik', sans-serif; font-weight: 400; font-size: 20px; line-height: 25px;}
+
+/* Storia dell'azienda */
+.business {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #2e7d32;
+    color: #2e7d32;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* Inizio: Sezione dati (aggiornati e presi dal report 2024) e valori dell'azienda */
+.data-section {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.col-1 {
+    padding: 200px 70px 120px 160px;
+}
+
+.p1 {font-family: 'Merriweather', serif; font-weight: 500; font-size: 17px; color: #2e7d32; text-transform: uppercase;}
+
+.title1 {margin: 31px 0; font-family: 'Rubik', sans-serif; font-weight: 500; font-size: 30px; color: #2e7d32;}
+
+.p2 {font-family: 'Rubik', sans-serif; font-weight: 400; font-size: 16px; color: #2e7d32; line-height: 26px;}
+
+.col-2 {padding: 55px 180px 120px 50px;}
+
+.col-2 p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #B7410E;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.col-2 strong {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    font-size: 65px;
+    color: #2e7d32;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+/* Fine: Sezione dati e valori dell'azienda */
+
+/* Video incorporato da YouTube */
+#embedded-video {               /* id aggiunto per modifica di visualizzazione del video */
+    display: block;
+    margin: 0 auto;
+    width: 964px;
+    height: 542px;
+}
+
+/* Inizio: Sezione Framework di Sostenibilità */
+.framework-section {
+    height: 130vh;
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.text {padding-top: 100px; padding-left: 160px;}
+
+.text p {font-family: 'Rubik', sans-serif; font-weight: 400; font-size: 16px; color: #2e7d32; padding-bottom: 15px; line-height: 26px;}
+
+.title2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #2e7d32;
+    padding-bottom: 35px;
+}
+
+.framework { width: 100%; height: auto; padding: 50px 50px 0 50px;}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #B7410E;
+    padding-top: 10px;
+}
+/* Fine: Sezione Framework di Sostenibilità */
+
+/* Descrizione della sezione download dei report */
+.description2 {width: 100%; height: 25vh; padding: 15px 210px 0 160px; margin-bottom: 50px;}
+
+.description2 h2 {
+    padding-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    color: #2e7d32;
+}
+
+.description2 p {font-size: 16px; font-family: 'Rubik', sans-serif; font-weight: 400; color: #2e7d32; line-height: 26px;}
+
+/* Inizio: Sezione download dei report */
+.download-section {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.5rem;
+    padding: 32px;
+    margin-right: 137px;
+    margin-bottom: 50px;
+}
+
+.report-cover {
+    width: 450px;
+    height: auto;
+    transform: rotate(-5deg);
+    margin: 70px 0 50px 150px;
+    box-shadow: -20px 25px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.download {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.download a {
+    text-decoration: none;
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #2e7d32;
+    font-family: 'Rubik', sans-serif;
+}
+
+.download a:hover {text-decoration: underline;}
+
+.fa-file-pdf-o {color: red; padding-right: 10px;} /* Icona File PDF */
+.fa-download {                                      /* Icona Download */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    border-radius: 100%;
+    background-color: #2e7d32;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #f1f8e9;
+    padding-top: 2px;
+}
+
+/* Riga Report 2024 */
+.last-report {font-size: 20px; font-weight: 500;}
+.d-last-report{font-size: 16px; font-weight: 500; color: #1b5e20;}
+
+/* Altri Report */
+.left-text {font-size: 16px; font-weight: 400;}
+.right-text {font-size: 14px; font-weight: 500; color: #1b5e20;}
+
+/* Linee dorate */
+.line-r2024 {display: block; width: 100%; height: 32px; background-color: #6b8f68;}
+.line {display: block; width: 100%; height: 8px; background-color: #6b8f68;}
+
+/* Fine: Sezione download dei report */
+
+/* Inizio: Sezione Comunicato stampa e highlight */
+.wrapper1 {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 30px;
+    margin: 0 150px;
+}
+
+.section1 {
+    padding-right: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section1 h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #2e7d32;
+    padding-bottom: 30px;
+}
+
+.section1 p {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #2e7d32;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+
+.section1 a {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #2e7d32;
+    text-decoration: underline;
+}
+
+.wrapper2 {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 30px 40px;
+    margin: 0 150px;
+}
+
+.section2 {
+    padding-left: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section2 h2 {
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #2e7d32;
+    padding-bottom: 30px;
+}
+
+.section2 p {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #2e7d32;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+
+.section2 a {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #2e7d32;
+    text-decoration: underline;
+}
+
+.image {display: flex; justify-content: center; align-items: center;}
+
+.image img {width: 580px; height: auto;}
+
+/* Fine: Sezione Comunicato stampa e highlight */
+
+/* Inizio: Footer */
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #266a29;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 31px 15px;
+}
+
+.footer-section {display: flex; flex-direction: column;  margin: 0 auto;}
+.footer-section a {text-decoration: none; color: #fff; display: block; margin-bottom: 30px;}
+
+.third-section {display: flex; flex-direction: column;  margin: 0 auto;}
+.third-section a {text-decoration: none; color: #fff; display: block; margin-bottom: 30px;}
+
+.divider-line-container {display: none;} /* separatori smartphone nascosti */
+
+.hover a:hover {color: lightgray;}
+
+.txt1 {font-size: 14px; font-family: 'Merriweather', serif; font-weight: 500;}
+.txt2 {font-size: 12px; font-family: 'Rubik', sans-serif; font-weight: 400;}
+
+.fa-share-square-o {color: #fff; font-size: 12px; margin-right: 6px;}
+
+.end-line {grid-column: 1/4; background-color: #266a29; display: flex; justify-content: center; padding: 30px 0;}
+.footer-line {width: 90%; border: 1px solid #fff;}
+
+.end {
+    width: 100%;
+    height: auto;
+    background-color: #266a29;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/4;
+}
+
+.end span {color: #fff; font-size: 12px; font-family: 'Rubik', sans-serif; font-weight: 400;}
+.end img {width: 75px; height: 75px;}
+
+.icon i {font-size: 22px; color: #fff; padding-left: 5px; padding-right: 5px;}
+/* Fine: Footer */
+
+/* Icona Accessibilità */
+.accessibility-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.accessibility-container i {color: #C79416; font-size: 50px;}
+.accessibility-container i:hover {color: #8a6508; transition: color 0.3s ease;}
+
+
+/* media query per schermi fino a 768px */
+@media only screen and (max-width: 768px) {
+
+    /* Inizio header: contiene logo, navigazione, call to action (cta), icona menu puramente visiva */
+    .header{padding-left: 20px; padding-right: 20px; position: relative;}
+    .menu {position: absolute; top: 145px; right: 100%;}
+    .menu li {width: 100%;}
+    .contact {position: absolute; right: 70px;}
+
+    .menu-icon {
+        height: 27px;
+        width: 35px;
+        position: absolute;
+        top: 24px;
+        right: 15px;
+    }
+
+    .menu-icon span {
+        display: block;
+        position: absolute;
+        top: 8px;
+        width: 30px;
+        height: 4px;
+        background-color: #DDE4DA;
+    }
+
+    .menu-icon span:nth-child(1) {margin-top: 10px;}
+    .menu-icon span:nth-child(2) {margin-top: 2px;}
+    .menu-icon span:nth-child(3) {margin-top: -6px;}
+    /*Fine header*/
+
+    /* under-header: striscia marrone */
+    .under-header {padding: 23px 40px; margin-top: 0; font-size: 12px;}
+
+    /* Sezione introduttiva */
+    .introduction {height: auto; padding: 80px 40px 70px 19px;}
+
+    .note {margin-bottom: 5px; font-size: 12px;}
+
+    h1 {font-size: 36px; margin-bottom: 10px;}
+
+    /* Storia dell'azienda */
+    .business{font-size: 14px;}
+
+    /* Sezione dati e valori dell'azienda */
+    .data-section {display: flex; flex-direction: column-reverse; padding: 0 20px;}
+
+    .col-1 {padding: 70px 0;}
+    .title1 {font-size: 22px; line-height: 32px;}
+
+    .col-2 {padding: 55px 0; width: 100%;}
+    .col-2 p {font-size: 16px;}
+    .col-2 strong {font-size: 55px;}
+
+    /* Video YouTube*/
+    #embedded-video {width: 100%; height: 400px; padding: 0 20px;}
+    .note2 {font-size: 10px; white-space: pre-line;}
+
+    /* Sezione Framework di Sostenibilità */
+    .framework-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .text {order: 1; padding: 0 0 50px;}
+    .title2 {font-size: 22px;}
+    
+    .framework {order: 2; width: 100%; height: auto; padding: 70px 0 0 0; }
+    figcaption {padding-bottom: 70px;}
+
+    /* Descrizione della sezione download dei report */
+    .description2 {height: auto; padding: 15px 20px 0px 20px; margin: 0 0 100px;}
+    .description2 h2 {font-size: 30px;}
+    .description2 p {font-size: 14px;}
+
+    /* Inizio: Sezione download dei report */
+    .download-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4.5rem;
+        padding: 0 20px;
+        margin-right: 0;
+    }
+
+    .download-section figure {display: flex; justify-content: center; align-items: center; flex-direction: column;}
+    .report-cover {width: 300px; height: auto; margin-left: 0; margin-bottom: 50px;}
+
+    .note3 {padding-left: 10px; font-size: 12px;}
+    .download {padding: 0; display: flex; justify-content: center; align-items: center; max-width: 100%;}
+    .download a {padding: 15px; width: 100%;}
+
+    .fa-file-pdf-o {padding-right: 5px;}
+    .fa-download {display: flex; justify-content: center; align-items: center; padding-top: 3px 0 0 0; font-size: 14px; color: #59200A;}
+
+    /* Riga Report 2024 */
+    .last-report {font-size: 16px; font-weight: 500; padding-right: 5px;}
+    .download .d-last-report  {display: none;}
+
+    /* Altri Report */
+    .left-text {font-size: 14px; font-weight: 400; padding-right: 10px;}
+    .download .right-text {display: none;}
+
+    /* Linee dorate */
+    .line-r2024 {display: block; width: 100%; height: 8px; background-color: #C79416;}
+    .line {display: block; width: 100%; height: 4px; background-color: #C79416;}
+    /* Fine: Sezione download dei report */
+
+    /* Inizio: Sezione Comunicato stampa e highlight */
+    .wrapper1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .section1 {padding: 0;}
+    .section1 h2 {font-size: 22px;}
+
+    .wrapper2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .section2 {padding: 0;}
+    .section2 h2 {font-size: 22px;}
+
+    .image img {width: 100%; height: auto; margin-bottom: 30px;}    
+    /* Fine: Sezione Comunicato stampa e highlight */
+
+    /*Inizio: Footer*/
+    .footer {grid-template-columns: 1fr; padding-left: 0; padding-right: 0;}
+
+    .footer-section {margin-top: 10px;}
+
+    .third-section {flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; margin-top: 20px;}
+    .third-section a {padding: 10px 18px; margin-bottom: 20px;}
+
+    .txt2 {font-size: 14px;}
+
+    .divider-line-container {display: flex; justify-content: center;}
+    .divider-line {width: 90%; height: 1px; background-color: #fff; margin-bottom: 20px;}
+
+    .end-line {padding-top: 0;}
+    /*Fine: Footer*/
+
+    /* Icona Accessibilità */
+    .accessibility-container {width: 40px; height: 40px; bottom: 10px; left: 10px;}
+    .accessibility-container i {font-size: 40px;}
+}
+
+
+/* media query per schermi 769px-1440px */
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+
+    /* Header */
+    .menu {display: grid; grid-template-columns: 1fr 1fr;}
+
+    /* under_header */
+    .under-header {margin-top: 77px; padding: 20px 200px;}
+
+    /* Sezione introduttiva */
+    .introduction {height: auto; padding: 150px 190px 90px 30px;}
+    h1 {font-size: 70px; margin-bottom: 8px;}
+
+    /* Sezione dati e valori dell'azienda */
+    .data-section {margin-top: 0;}
+
+    .col-1 {padding: 80px 70px 120px 35px; display: block; align-content: center;}
+    .col-2 {padding: 100px 10px 120px 50px; display: block; align-content: center;}
+
+    .col-2 p {font-size: 17px;}
+    .col-2 strong {font-size: 55px;}
+
+    /* Video YouTube */
+    #embedded-video {padding: 0 40px; width: 100%;}
+
+    /* Inizio: Sezione Framework di Sostenibilità */
+    .framework-section {height: auto; padding: 0 20px 0; margin: 50px 0;}
+
+    .text {
+        padding: 0 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+
+    .text h2 {line-height: 40px;}
+    .text span {font-size: 25px;}
+    .text p {font-size: 16px;}
+
+    .c-framework {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    figcaption {padding-bottom: 20px;}
+    .framework {padding: 20px 0 0 0;}
+    /* Fine: Sezione Framework di Sostenibilità */
+    
+    /* Descrizione della sezione download dei report */
+    .description2 {padding: 15px 20px 0; height: auto; margin-top: 50px;}
+
+    /* Inizio: Sezione download dei report */
+    .download-section {gap: 4rem; padding: 0; margin-left: 50px; margin-right: 50px; display: flex; align-items: center;}
+
+    .report-cover {width: 350px; height: auto; margin-left: 50px;}
+
+    .note3 {font-size: 12px; justify-content: flex-start; padding-left: 80px;}
+
+    .download {width: 100%; padding: 0;}
+    .download a {padding-right: 0; padding-left: 0;}
+
+    .fa-file-pdf-o {padding-right: 5px;}
+    .fa-download {display: flex; justify-content: center; align-items: center; padding: 0; font-size: 12px; border-radius: 100%;}
+
+    /* Riga Report 2024 */
+    .last-report {font-size: 14px;}
+    .d-last-report {font-size: 10px;}
+
+    /* Altri Report */
+    .left-text {font-size: 12px;}
+    .right-text {font-size: 10px;}
+
+    /* Linee dorate */
+    .line-r2024 {display: block; width: 100%; height: 8px; background-color: #C79416;}
+    .line {display: block; width: 100%; height: 3px; background-color: #C79416;}
+    /* Fine: Sezione download dei report */
+
+    /* Inizio: Sezione Comunicato stampa e highlight */
+    .wrapper1 {margin: 0 50px 30px; padding: 0 30px;}
+
+    .wrapper2 {margin: 0 50px 50px; padding: 0 30px;}
+
+    .image img {max-width: 100%; height: auto;}
+    /* Fine: Sezione Comunicato stampa e highlight */
+
+    /* Icona Accessibilità */
+    .accessibility-container {width: 40px; height: 40px; bottom: 15px; left: 15px;}
+    .accessibility-container i {font-size: 40px;}
+}
+
+/* media query per schermi 769px-1008px:
+implementata per una migliore visualizzazione dei download dei Report nella fascia di grandezza indicata */
+@media only screen and (min-width: 769px) and (max-width: 1008px) {
+
+    .download-section { margin-left: 50px; margin-right: 50px; gap: 2.5rem;}
+
+    .report-cover {width: 300px; height: auto; margin-left: 30px;}
+
+    .note3 {font-size: 11px; padding-left: 40px;}
+
+    .download a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .last-report {font-size: 18px; padding-right: 5px;}
+    .left-text {font-size: 14px; padding-right: 5px;}
+}
