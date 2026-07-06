@@ -1,6 +1,6 @@
 # PROGETTO PAGINA WEB RESPONSIVE COMPLETA
 
-🔗 **[Visualizza l'anteprima live del progetto (GitHub Pages)](https://gianluca-4.github.io/Responsive-Project/)**
+🔗 **[Visualizza l'anteprima live del progetto (GitHub Pages)](https://gianluca-casano.github.io/Responsive-Project/)**
 
 Questo progetto è una versione rielaborata e ottimizzata del mio **Project Work universitario per la Laurea in Informatica**. L'applicazione originale è stata sottoposta a un processo di rebranding e pulizia dei riferimenti commerciali per renderla pubblicamente accessibile, mantenendo inalterata la struttura logica e funzionale.
 
